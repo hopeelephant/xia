@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		a{
+			text-decoration: none;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			width: 960px;
+			margin: 0 auto;
+		}
+		.header img{
+			
+			padding-left: 10px;
+		}
+		.header h1{
+			width: 940px;
+			margin: 0 auto;
+			line-height: 95px;
+			font-size: 34px;
+			font-weight: bold;
+			text-shadow: 2px 2px #a3a1a1;
+		}
+		h1 span{
+			color:#a3a1a1; 
+		}
+
+		nav{
+			padding-left: 10px;
+			width: 950px;
+			display: table;
+			background: url(images/atw_mockup_11.png) repeat-x;
+		}
+		ul{
+			margin: 0 auto;
+			list-style: none;
+			display: table-row;
+		}
+		li{
+			display: table-cell;
+		}
+		li a{
+			font-size: 20px;
+			font-weight: bold;
+		}
+		
+		ul li:last-child{
+			text-align: right;
+			padding-right: 10px;
+			line-height: 42px;
+		}
+		ul li:nth-child(odd) a{
+			color: #fe0208;
+		}
+		ul li:nth-child(even) a{
+			color: #010001;
+			
+		}
+		ul li:nth-child(even) a:hover{
+			animation: one 1s ease infinite;
+		}
+		@keyframes one{
+			0%{text-shadow: 0 0 2px #494949;}
+			20%{text-shadow: 0 0 6px #494949;}
+			40%{text-shadow: 0 0 10px #494949;}
+			80%{text-shadow: 0 0 14px #494949;}
+			100%{text-shadow: 0 0 20px #494949;}
+		}
+		.mainleft .img1{
+			animation: two 1s ease 2 forwards;
+		}
+		@keyframes two{
+			0%{transform: rotate(10deg);}
+			50%{transform: rotate(0deg);}
+			100%{transform: rotate(-10deg);}
+
+		}
+
+		.mainleft .img2{
+			animation: three 1s ease 2 forwards;
+		}
+		@keyframes three{
+			0%{transform: rotate(-10deg);}
+			50%{transform: rotate(0deg);}
+			100%{transform: rotate(10deg);}
+
+		}
+		.mainleft a:hover{
+			animation: four 1s ease infinite;
+		}
+		@keyframes four{
+			0%{box-shadow: 0 0 0 #494949;}
+			100%{box-shadow: 1px 3px 5px #494949;}
+		}
+		
+		.mainright a:hover{
+			animation: five 2s ease forwards
+		}
+		@keyframes five{
+			0%{color: #fff; text-shadow: 0px 2px 3px #858585;border-bottom: 3px solid #d11454;}
+			20%{color: #161616; text-shadow: 0px 2px 3px #858585;border-bottom: 3px solid #d11454;}
+			40%{color: #0e0e0e; text-shadow: 0px 2px 3px #858585;border-bottom: 3px solid #d11454;}
+			60%{color: #050505; text-shadow: 0px 2px 3px #858585;border-bottom: 3px solid #d11454;}
+			80%{color: #858585;border-bottom: 3px solid #d11454;}
+			100%{color:#afafaf;border-bottom: 3px solid #d11454;}
+		}
+		.mainright a:hover span{
+			animation: six 4s ease forwards
+		}
+		@keyframes six{
+			0%{color: #fff; text-shadow: 0px 2px 3px #858585;}
+			20%{color: #fff; text-shadow: 0px 2px 3px #858585;}
+			40%{color: #fff; text-shadow: 0px 2px 3px #858585;}
+			60%{color: #050505; text-shadow: 0px 2px 3px #858585;}
+			80%{color: #858585;}
+			100%{color:#afafaf;}
+		}
+		.xian{
+			width: 940px;
+			margin: 0 auto;
+			margin-top: 23px;
+			clear: both;
+		}
+		.xian1{
+			height: 2px; 
+			 background:#a3a1a1;
+			margin-bottom: 2px;
+		}
+		.xian2{
+			height: 2px; 
+			 background:#a3a1a1;
+		}
+		.main{
+			width: 940px;
+			margin: 0 auto;
+			margin-top: 63px;
+			overflow: hidden;
+		}
+		.mainleft{
+			width: 250px;
+			float: left;
+		}
+		.mainleft h3{
+			font-size: 21px;
+			margin-bottom: 28px;
+		}
+
+		.mainleft .img{
+			margin-right: 20px;
+			display:block;
+			float: left;
+		}
+		.mainleft a{
+			color:#696666;
+			display: block;
+			width: 100px;
+			text-align: center;
+			border-radius: 20px;
+			line-height: 25px;
+			height: 25px;
+			background: #bbb;
+			border: 1px solid #707070;
+			margin-top: 10px;
+		}
+		.he{
+			overflow: hidden;
+			margin-bottom: 34px;
+			padding-bottom: 20px;
+		}
+		.maincenter{
+			float: left;
+			margin-left: 20px;
+		}
+		.mainright{
+			float: right;
+			width: 430px;
+
+			margin-left: 20px;
+			padding-bottom: 40px;
+		}
+		.mainright h1{
+			padding-top: 34px;
+			font-size: 70px;
+			font-weight: bolder;
+			text-shadow: 1px 1px #a3a1a1;
+			margin-bottom: 17px;
+		}
+		.mainright h2{
+			font-size: 36px;
+			line-height:44px;
+			color: #757474;
+			margin-bottom: 17px;
+			letter-spacing: 2px;
+			word-spacing: -5px;
+			text-shadow: 1px 2px #a3a1a1;
+		}
+		.mainright p{
+			font-size: 22px;
+			line-height: 35px;
+			color: #afafaf;
+			text-shadow: 1px 1px;
+		}
+		.mainright span{
+			color: #757474;
+		}
+		.mainright a{
+			display: block;
+			width: 398px;
+			height: 88px;
+			border: 1px solid #d74549;
+			border-radius: 12px;
+			background: url(images/atwi_mockup_118.png);
+			font-size: 28px;
+			font-weight: bold;
+			color: #fff;
+			line-height: 88px;
+			text-align: center;
+			margin-top: 20px;
+			box-shadow: 5px 5px 5px #989898;
+		}
+		.mainright a span{
+			color: #fff;
+		}
+		.footer p{
+			text-align: center;
+			color: #757474;
+			word-spacing: -3px;
+			font-weight: bold;
+			text-shadow: 1px 1px 1px #a3a2a2;
+			font-size: 14px;
+			word-spacing: -3px;
+			margin-top: 32px;
+		}
+		.footer img{
+			padding-left: 10px;
+			margin-top: 35px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<img src="images/atwi_mockup_03.png" alt="">
+			<h1>AND THE WINNER IS<span>N'T...</span></h1>
+			<nav>
+				<ul>
+					<li><a href="">WHY</a></li>
+					<li><a href="">SYNOPSIS</a></li>
+					<li><a href="">STILLS/PHOTOS</a></li>
+					<li><a href="">VIDEOS/CLIPS</a></li>
+					<li><a href="">QUOTES</a></li>
+					<li><a href="">QUIZ</a></li>
+				</ul>
+			</nav>
+			<div class="xian">
+				<div class="xian1"></div>
+				<div class="xian2"></div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="mainleft">
+				<div class="he">
+					<h3>UNSUNG HEROES</h3>
+					<div class="img">
+						<img src="images/atwi_mockup_09.png" alt="" class="img1">
+						<a href="">full info</a>
+					</div>
+					<div class="img">	
+						<img src="images/atwi_mockup_11.png" alt="" class="img2">
+						<a href="">full info</a>
+					</div>
+				</div>
+				<div class="he">
+					<h3>OVERHYPED NONSENSE</h3>
+					<div class="img">
+						<img src="images/atwi_mockup_09.png" alt="" class="img1">
+						<a href="">full info</a>
+					</div>
+					<div class="img">	
+						<img src="images/atwi_mockup_11.png" alt="" class="img2">
+						<a href="">full info</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="maincenter">
+				<img src="images/atwi_mockup_06.png" alt="">
+			</div>
+			<div class="mainright">
+				<h1>EVERY YEAR</h1>
+				<h2>WHEN I WATCH THE OSCARS I'M ANNOYED...</h2>
+				<p>that films like <span> King Kong, Moulin Rouge</span> and <span>Munich</span> get the statue whilst the real cinematic heroes ose out.Not every Hollywood is it? We'are here to put things right</p>
+				<a href="">THESE SHOULD HAVE WON <span>>></span></a>
+			</div>
+			<div class="xian">
+				<div class="xian1"></div>
+				<div class="xian2"></div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>NOTE:OUR OPINION ABSOLUTELY CORRECT. YOU ARE WRONG, VEEN IF YOU THINK YOU ARE RIGHT THAT'S   FACT .DEAL WITH IT</p>
+			<img src="images/atwi_mockup_28.png" alt="">
+		</div>
+	</div>
+</body>
+</html>
